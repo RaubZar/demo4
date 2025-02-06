@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Типы предприятий</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+  <h1>Типы предприятий</h1>
+
+  <!-- Кнопка Добавить -->
+  <a th:href="@{/enterprise-types/add}" class="btn btn-success mb-3">Добавить тип предприятия</a>
+
+  <!-- Кнопка Обновить список -->
+  <a th:href="@{/enterprise-types}" class="btn btn-primary mb-3">Обновить список</a>
+
+  <!-- Таблица со списком типов предприятий -->
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Название</th>
+      <th>Код</th>
+      <th>Комментарий</th>
+      <th>Действия</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="type : ${enterpriseTypes}">
+      <td th:text="${type.id}"></td>
+      <td th:text="${type.name}"></td>
+      <td th:text="${type.code}"></td>
+      <td th:text="${type.comment}"></td>
+      <td>
+        <!-- Ссылка для просмотра предприятий этого типа -->
+        <a th:href="@{/enterprise-types/{id}/enterprises(id=${type.id})}" class="btn btn-warning btn-sm">Показать предприятия</a>
+        <!-- Ссылка для редактирования типа предприятия -->
+        <a th:href="@{/enterprise-types/edit/{id}(id=${type.id})}" class="btn btn-warning btn-sm">Редактировать</a>
+        <!-- Ссылка для удаления типа предприятия -->
+        <a th:href="@{/enterprise-types/delete/{id}(id=${type.id})}" class="btn btn-danger btn-sm">Удалить</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

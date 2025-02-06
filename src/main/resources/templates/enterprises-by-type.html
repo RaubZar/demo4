@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Предприятия по типу</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1>Предприятия типа: <span th:text="${enterprises[0]?.enterpriseType?.name}"></span></h1>
+
+    <!-- Кнопка Обновить список -->
+    <a th:href="@{/enterprises/by-type/{typeId}(typeId=${enterprises[0]?.enterpriseType?.id})}" class="btn btn-primary mb-3">Обновить список</a>
+
+    <!-- Таблица со списком предприятий -->
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Код</th>
+            <th>Комментарий</th>
+            <th>Тип</th> <!-- Новый столбец -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="enterprise : ${enterprises}">
+            <td th:text="${enterprise.id}"></td>
+            <td th:text="${enterprise.name}"></td>
+            <td th:text="${enterprise.code}"></td>
+            <td th:text="${enterprise.comment}"></td>
+            <td th:text="${enterprise.enterpriseType.name}"></td> <!-- Отображение типа предприятия -->
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Ссылка для возврата к списку типов предприятий -->
+    <a th:href="@{/enterprise-types}" class="btn btn-secondary">Назад к типам предприятий</a>
+</div>
+</body>
+</html>

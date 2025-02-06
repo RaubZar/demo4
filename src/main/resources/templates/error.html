@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ошибка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1>Ошибка</h1>
+    <div class="alert alert-danger" th:text="${errorMessage}"></div>
+    <a th:href="@{/enterprise-types}" class="btn btn-secondary">Вернуться к списку типов предприятий</a>
+</div>
+</body>
+</html>

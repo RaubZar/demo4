@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Добавить предприятие</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+  <h1>Добавить предприятие</h1>
+
+  <!-- Сообщения об ошибках и успешных операциях -->
+  <div th:if="${successMessage}" class="alert alert-success" th:text="${successMessage}"></div>
+  <div th:if="${errorMessage}" class="alert alert-danger" th:text="${errorMessage}"></div>
+
+  <!-- Форма добавления предприятия -->
+  <form th:action="@{/enterprises/add}" th:object="${enterprise}" method="post">
+    <div class="form-group">
+      <label for="name">Наименование</label>
+      <input type="text" class="form-control" id="name" th:field="*{name}" required>
+    </div>
+    <div class="form-group">
+      <label for="code">Код</label>
+      <input type="text" class="form-control" id="code" th:field="*{code}" required>
+    </div>
+    <div class="form-group">
+      <label for="comment">Комментарий</label>
+      <textarea class="form-control" id="comment" th:field="*{comment}"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="enterpriseType">Тип предприятия</label>
+      <select class="form-control" id="enterpriseType" th:field="*{enterpriseType}" required>
+        <option th:each="type : ${enterpriseTypes}"
+                th:value="${type.id}"
+                th:text="${type.name}"></option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+    <a th:href="@{/enterprises}" class="btn btn-secondary">Отмена</a>
+  </form>
+</div>
+</body>
+</html>

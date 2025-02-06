@@ -1,0 +1,279 @@
+2025-02-05 22:39:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-05 22:39:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-05 23:14:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-05 23:15:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-05 23:16:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-06 00:00:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-06 00:14:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-06 00:14:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-06 00:15:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-06 00:21:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-06 00:22:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-06 00:23:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2025-02-06 00:35:05 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Неверное имя пользователя или пароль
+Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Неверное имя пользователя или пароль
+Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 50 more
+2025-02-06 00:36:19 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]ID"; ожидалось "INSERT"
+Syntax error in SQL statement "[*]ID"; expected "INSERT"; SQL statement:
+ID [42001-214]
+2025-02-06 00:36:24 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]ID CODE"; ожидалось "INSERT"
+Syntax error in SQL statement "[*]ID CODE"; expected "INSERT"; SQL statement:
+ID CODE [42001-214]
+2025-02-06 00:36:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]NAME"
+Syntax error in SQL statement "[*]NAME"; SQL statement:
+NAME [42000-214]
+2025-02-06 00:37:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]NAME"
+Syntax error in SQL statement "[*]NAME"; SQL statement:
+NAME [42000-214]
+2025-02-06 00:37:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]NAME"
+Syntax error in SQL statement "[*]NAME"; SQL statement:
+NAME [42000-214]
+2025-02-06 00:38:33 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]NAME"
+Syntax error in SQL statement "[*]NAME"; SQL statement:
+NAME [42000-214]
+2025-02-06 00:38:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]NAME TYPE_ID"
+Syntax error in SQL statement "[*]NAME TYPE_ID"; SQL statement:
+NAME TYPE_ID [42000-214]
+2025-02-06 01:04:47 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]DO $$\000d\000aBEGIN\000d\000a    IF NOT EXISTS (SELECT 1 FROM database_version WHERE version = 'v1') THEN\000d\000a\000d\000a        CREATE TABLE new_table (\000d\000a            id BIGINT AUTO_INCREMENT PRIMARY KEY,\000d\000a            name VARCHAR(255) NOT NULL,\000d\000a            description VARCHAR(1000)\000d\000a        );\000d\000a\000d\000a        ALTER TABLE existing_table ADD COLUMN new_column VARCHAR(255);\000d\000a\000d\000a        UPDATE existing_table SET column_name = 'new_value' WHERE condition;\000d\000a\000d\000a        INSERT INTO new_table (name, description) VALUES\000d\000a        ('Item 1', 'Description for Item 1'),\000d\000a        ('Item 2', 'Description for Item 2');\000d\000a\000d\000a        INSERT INTO database_version (id, version) VALUES (1, 'v1');\000d\000a    END IF;\000d\000aEND $$"; ожидалось "DELETE, DROP, DECLARE, DEALLOCATE"
+Syntax error in SQL statement "[*]DO $$\000d\000aBEGIN\000d\000a    IF NOT EXISTS (SELECT 1 FROM database_version WHERE version = 'v1') THEN\000d\000a\000d\000a        CREATE TABLE new_table (\000d\000a            id BIGINT AUTO_INCREMENT PRIMARY KEY,\000d\000a            name VARCHAR(255) NOT NULL,\000d\000a            description VARCHAR(1000)\000d\000a        );\000d\000a\000d\000a        ALTER TABLE existing_table ADD COLUMN new_column VARCHAR(255);\000d\000a\000d\000a        UPDATE existing_table SET column_name = 'new_value' WHERE condition;\000d\000a\000d\000a        INSERT INTO new_table (name, description) VALUES\000d\000a        ('Item 1', 'Description for Item 1'),\000d\000a        ('Item 2', 'Description for Item 2');\000d\000a\000d\000a        INSERT INTO database_version (id, version) VALUES (1, 'v1');\000d\000a    END IF;\000d\000aEND $$"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+DO $$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM database_version WHERE version = 'v1') THEN
+
+        CREATE TABLE new_table (
+            id BIGINT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(255) NOT NULL,
+            description VARCHAR(1000)
+        );
+
+        ALTER TABLE existing_table ADD COLUMN new_column VARCHAR(255);
+
+        UPDATE existing_table SET column_name = 'new_value' WHERE condition;
+
+        INSERT INTO new_table (name, description) VALUES
+        ('Item 1', 'Description for Item 1'),
+        ('Item 2', 'Description for Item 2');
+
+        INSERT INTO database_version (id, version) VALUES (1, 'v1');
+    END IF;
+END $$ [42001-214]
+2025-02-06 01:05:58 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "-- Начало транзакции\000d\000a[*]START TRANSACTION"; ожидалось "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"
+Syntax error in SQL statement "-- Начало транзакции\000d\000a[*]START TRANSACTION"; expected "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
+-- Начало транзакции
+START TRANSACTION [42001-214]
+2025-02-06 01:05:58 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "EXISTING_TABLE" не найдена
+Table "EXISTING_TABLE" not found; SQL statement:
+-- Добавление нового столбца в существующую таблицу (если его нет)
+ALTER T [42102-214]
+2025-02-06 01:05:58 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "EXISTING_TABLE" не найдена
+Table "EXISTING_TABLE" not found; SQL statement:
+-- Обновление данных (если условие корректно)
+UPDATE existing_table SET column_name = 'new_value' WHERE condition [42102-214]
+2025-02-06 01:10:31 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Неверное имя пользователя или пароль
+Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Неверное имя пользователя или пароль
+Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 50 more
+2025-02-06 01:13:45 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]patch_v1_h2.sql"; ожидалось "PREPARE"
+Syntax error in SQL statement "[*]patch_v1_h2.sql"; expected "PREPARE"; SQL statement:
+patch_v1_h2.sql [42001-214]
+2025-02-06 01:13:58 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "PREPARE patch_v1_h2[*].sql"; ожидалось "(, AS"
+Syntax error in SQL statement "PREPARE patch_v1_h2[*].sql"; expected "(, AS"; SQL statement:
+PREPARE patch_v1_h2.sql [42001-214]
+2025-02-06 01:14:16 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "PREPARE patch_v1_h2[*].sql"; ожидалось "(, AS"
+Syntax error in SQL statement "PREPARE patch_v1_h2[*].sql"; expected "(, AS"; SQL statement:
+PREPARE patch_v1_h2.sql [42001-214]
+2025-02-06 01:15:23 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "Delete *public"".""flyway_schema_history[*]"""
+Syntax error in SQL statement "Delete *public"".""flyway_schema_history[*]"""; SQL statement:
+Delete *public"."flyway_schema_history" [42000-214]
+2025-02-06 01:15:38 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "Delete *public"".""flyway_schema_history[*]"""
+Syntax error in SQL statement "Delete *public"".""flyway_schema_history[*]"""; SQL statement:
+Delete *public"."flyway_schema_history" [42000-214]
+2025-02-06 01:17:13 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PUBLIC" не найдена
+Table "PUBLIC" not found; SQL statement:
+DELETE FROM public "flyway_schema_history" [42102-214]
+2025-02-06 01:17:28 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "flyway_schema_history" не найдена
+Table "flyway_schema_history" not found; SQL statement:
+DELETE "flyway_schema_history" [42102-214]
+2025-02-06 01:17:35 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "FLYWAY_SCHEMA_HISTORY" не найдена
+Table "FLYWAY_SCHEMA_HISTORY" not found; SQL statement:
+DELETE flyway_schema_history [42102-214]
+2025-02-06 01:18:57 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "D:[*]\\demo4\\src\\main\\resources\\patch_v1.sql"
+Syntax error in SQL statement "D:[*]\\demo4\\src\\main\\resources\\patch_v1.sql"; SQL statement:
+D:\demo4\src\main\resources\patch_v1.sql [42000-214]
+2025-02-06 01:22:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]TYPE_ID"; ожидалось "TRUNCATE"
+Syntax error in SQL statement "[*]TYPE_ID"; expected "TRUNCATE"; SQL statement:
+TYPE_ID [42001-214]
+2025-02-06 01:22:53 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "COMMENT[*]"; ожидалось "ON"
+Syntax error in SQL statement "COMMENT[*]"; expected "ON"; SQL statement:
+COMMENT [42001-214]
+2025-02-06 01:22:57 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]NAME"
+Syntax error in SQL statement "[*]NAME"; SQL statement:
+NAME [42000-214]
+2025-02-06 01:23:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]NAME ID"
+Syntax error in SQL statement "[*]NAME ID"; SQL statement:
+NAME ID [42000-214]
+2025-02-06 01:36:02 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "-- Заполнение таблицы enterprise начальными данными\000d\000aINSERT INTO enterprise (name, code, comment, type_id) VALUES\000d\000a('Предприятие 1', 'P1', 'Комментарий для предприятия 1', [*]),\000d\000a('Предприятие 2', 'P2', 'Комментарий для предприятия 2', ),\000d\000a('Предприятие 3', 'P3', 'Комментарий для предприятия 3', )"; ожидалось "DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "-- Заполнение таблицы enterprise начальными данными\000d\000aINSERT INTO enterprise (name, code, comment, type_id) VALUES\000d\000a('Предприятие 1', 'P1', 'Комментарий для предприятия 1', [*]),\000d\000a('Предприятие 2', 'P2', 'Комментарий для предприятия 2', ),\000d\000a('Предприятие 3', 'P3', 'Комментарий для предприятия 3', )"; expected "DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+-- Заполнение таблицы enterprise начальными данными
+INSERT INTO enterprise (name, code, comment, type_id) VALUES
+('Предприятие 1', 'P1', 'Комментарий для предприятия 1', ),
+('Предприятие 2', 'P2', 'Комментарий для предприятия 2', ),
+('Предприятие 3', 'P3', 'Комментарий для предприятия 3', ) [42001-214]
